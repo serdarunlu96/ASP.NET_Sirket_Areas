@@ -1,0 +1,36 @@
+﻿@model ANK13Areas.Areas.Muhasebe.Data.Fatura
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Fatura</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Tutar)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Tutar)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Odenen)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Odenen)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Odeyen)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Odeyen)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
